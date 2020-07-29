@@ -1,0 +1,114 @@
+*::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    margin: 0;
+    background-color: hsl(71, 45%, 83%);
+    color:#585656 ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar {
+    padding: 2px;
+    width: 20%;
+    border-right: 1px solid  black;
+    background-color: wheat;
+}
+
+
+nav a { 
+    display: block;
+    padding-bottom: 1em;
+    padding-left: 10px;
+    border-top: 1px solid black;
+   
+}
+
+nav a:first-child {
+    background-color:hsl(71, 90%, 66%) ;
+}
+
+nav a:last-child {
+    border-bottom: 1px solid black;
+}
+
+
+#main-doc {
+    flex:1;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+
+pre code {
+    background:black;
+    display:block;
+    max-width:100%;
+    color: #ddd8d8;
+}
+
+code b  {
+    color: #eceaea
+    }
+
+h3 {
+color:black;
+    }
+li {
+    list-style-type:square;
+}
+
+ul {
+    padding-left: 2em;
+}
+a {
+    text-decoration:none ;
+}
+
+
+b {
+color: black;
+}
+
+
+header  {
+
+ font-size:24px;
+ font-weight:800;
+ color: black;
+}
+
+section {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+@media (max-width:600px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+
+        border-right: none;
+        height:200px;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+
+    #main-doc {
+        height: auto;
+        width: 100%;
+    }
+}
